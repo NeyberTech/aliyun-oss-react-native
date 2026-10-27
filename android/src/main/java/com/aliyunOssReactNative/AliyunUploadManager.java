@@ -129,7 +129,7 @@ public class AliyunUploadManager {
         // init upload request
         PutObjectRequest put = new PutObjectRequest(bucketName, ossFile, sourceFile);
         ObjectMetadata metadata = new ObjectMetadata();
-        metadata.setContentType("application/octet-stream");
+        // metadata.setContentType("application/octet-stream");
         put.setMetadata(metadata);
 
         // set callback
